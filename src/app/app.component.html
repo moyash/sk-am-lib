@@ -1,1 +1,27 @@
-<lib-sk-primary-button [title]="title"></lib-sk-primary-button>
+<lib-sk-primary-button
+  (click)="onPopup()"
+  [title]="title"
+></lib-sk-primary-button>
+
+<br />
+<br />
+<br />
+<hr />
+
+<!-- <lib-sk-login-email></lib-sk-login-email> -->
+
+<form [formGroup]="formG" (ngSubmit)="onSubmit()">
+  <label class="block">First name: </label>
+  <input type="text" class="border" formControlName="firstName" />
+
+  <label class="block">Last name: </label>
+  <input type="text" class="border" formControlName="lastName" />
+
+  <button
+    class="block bg-lime-400 rounded-lg"
+    type="submit"
+    [disabled]="!formG.valid"
+  >
+    push
+  </button>
+</form>
