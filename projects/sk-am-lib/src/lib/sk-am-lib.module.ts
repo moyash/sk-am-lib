@@ -5,6 +5,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SkLoginEmailComponent } from './login/sk-login-email/sk-login-email.component';
 import { SkEmailFormComponent } from './form/sk-email-form/sk-email-form.component';
 import { SkPasswordFormComponent } from './form/sk-password-form/sk-password-form.component';
+import { SkDangerButtonComponent } from './button/sk-danger-button/sk-danger-button.component';
 
 @NgModule({
   declarations: [
@@ -13,11 +14,13 @@ import { SkPasswordFormComponent } from './form/sk-password-form/sk-password-for
     SkLoginEmailComponent,
     SkEmailFormComponent,
     SkPasswordFormComponent,
+    SkDangerButtonComponent,
   ],
   imports: [FormsModule, ReactiveFormsModule],
   exports: [
     SkAmLibComponent,
     SkPrimaryButtonComponent,
+    SkDangerButtonComponent,
     SkLoginEmailComponent,
     SkEmailFormComponent,
     SkPasswordFormComponent,
